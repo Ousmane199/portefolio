@@ -15,7 +15,7 @@
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
-   text-transform: capitalize;
+   /*text-transform: capitalize;*/
    color:var(--black);
 }
 
@@ -65,7 +65,7 @@ section{
 }
 
 .heading span{
-   /*text-transform: uppercase;*/
+   text-transform: uppercase;
    font-size: 6.5rem;
    border-bottom: var(--border-bold);
 }
@@ -121,7 +121,7 @@ section{
 }
 
 .header .logo{
-   /*text-transform: uppercase;*/
+   text-transform: uppercase;
    border-bottom: var(--border-bold);
    font-weight: bolder;
    font-size: 4.5rem;
@@ -193,7 +193,7 @@ section{
 }
 
 .home .content h3{
-   /*text-transform: uppercase;*/
+   text-transform: uppercase;
    font-size: 5rem;
    margin-bottom: .5rem;
 }
