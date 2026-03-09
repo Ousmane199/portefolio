@@ -1,391 +1,645 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>PORTFOLIO ONC</title>
-   <link rel="icon" type="image/png" href="WhatsApp Image 2023-11-03 at 22.46.27.jpeg">
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CISSE Ousmane N'Faly — Fullstack Developer</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-   <!-- aos css link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Curseur personnalisé -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="style.css">
+    <!-- Effet aurora (canvas souris) -->
+    <canvas id="aurora"></canvas>
 
-</head>
-<body>
+    <!-- Grille de fond -->
+    <div class="grid-overlay"></div>
 
+    <!-- ══════════════════════════════
+     NAVIGATION
+     ══════════════════════════════ -->
+    <nav>
+      <div class="nav-logo">CIT+.dev</div>
+      <ul class="nav-links">
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<!-- header section starts  -->
+    <main>
+      <!-- ══════════════════════════════
+       HERO
+       ══════════════════════════════ -->
+      <section id="hero">
+        <div class="hero-tag">Fullstack Developer</div>
+        <h1 class="hero-name">
+          <span class="line"><span>CISSE</span></span>
+          <span class="line"><span>Ousmane</span></span>
+          <span class="line"
+            ><span><span class="highlight">N'Faly.</span></span></span
+          >
+        </h1>
+        <p class="hero-sub">
+          Je conçois et développe des expériences digitales robustes &amp;
+          élégantes —<br />
+          du backend solide aux interfaces qui marquent les esprits.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </section>
 
-<header class="header">
+      <!-- ══════════════════════════════
+       COMPÉTENCES
+       ══════════════════════════════ -->
+      <section id="skills">
+        <div class="section-label">Stack technique</div>
+        <h2 class="section-title reveal">Ce que je maîtrise</h2>
 
-   <div id="menu-btn" class="fas fa-bars"></div>
-
-   <a href="#home" class="logo">Portfolio</a>
-
-   <nav class="navbar">
-      <a href="#home" class="active">Acceuil</a>
-      <a href="#about">A propos</a>
-      <a href="#services">services</a>
-      <a href="#portfolio">portfolio</a>
-      <a href="#contact">contact</a>
-   </nav>
-
-   <div class="follow">
-      <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-      <a href="https://twitter.com/" class="fab fa-twitter"></a>
-      <a href="https://www.instagram.com/ged_m25/?next=%2Fexplore%2F" class="fab fa-instagram"></a>
-      <a href="https://fr.linkedin.com/" class="fab fa-linkedin"></a>
-      <a href="https://github.com/gmuti" class="fab fa-github"></a>
-   </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-   <div class="image" data-aos="fade-right">
-      <img src="WhatsApp Image 2023-11-03 at 22.46.27.jpeg" alt="M. CISSE Ousmane N'Faly">
-   </div>
-
-   <div class="content">
-      <h3 data-aos="fade-up">Ousmane N'Faly CISSÉ</h3>
-      <span data-aos="fade-up">Etudiant en Master informatique</span>
-      <p data-aos="fade-up">Mon portfolio présente mes projets de développement les plus récents ainsi que mes compétences 
-         en programmation et en résolution de problèmes. Il reflète également mon parcours scolaire et mes intérêts 
-         en matière de développement.
-         </p>
-      <a data-aos="fade-up" href="#about" class="btn">A propos de moi</a>
-   </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-   <h1 class="heading" data-aos="fade-up"> <span>biographie</span> </h1>
-
-   <div class="biography">
-
-      <p data-aos="fade-up">En tant qu'étudiant en informatique, je suis passionné par le développement web et la création de logiciels. Cette passion m'a permis de fusionner mes intérêts personnels avec mes compétences techniques, créant ainsi des projets uniques et inspirants.
-
-Quand j'étais petit, j'aimais beaucoup ouvrir les téléphones et les ordinateurs. Mais avant de les ouvrir, je voyais des applications et des pages web. Une fois que je les ouvrais, je ne trouvais rien, ce qui était étonnant pour moi à l'époque. C'est cette même curiosité qui m'a ramené à faire de l'informatique.
-
-Je crois que cette combinaison de passion et de compétences peut me permettre de me démarquer dans le monde du développement web. Je suis enthousiaste à l'idée de continuer mon parcours d'étudiant en informatique et de poursuivre ma passion pour le développement web.</p>
-
-      <div class="bio">
-         <h3 data-aos="zoom-in"> <span>nom : </span> Ousmane N'Faly CISSÉ </h3>
-         <h3 data-aos="zoom-in"> <span>email : </span> cisseousmane3208@gmail.com </h3>
-         <h3 data-aos="zoom-in"> <span>adresse : </span> Angers/ France </h3>
-         <h3 data-aos="zoom-in"> <span>telephone : </span> +33 7 45 67 11 19</h3>
-         
-         <h3 data-aos="zoom-in"> <span>experience : </span> 3 ans + </h3>
-      </div>
-
-      <a href="cv_besancon_cisse_ousmane.pdf" class="btn" data-aos="fade-up">Télécharger CV</a>
-
-   </div>
-   
-   <div class="skills" data-aos="fade-up">
-
-      <h1 class="heading"> <span>Langages</span> </h1>
-
-      <div class="progress">
-         <div class="bar" data-aos="fade-left"> <h3><span>HTML</span> <span>95%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>CSS</span> <span>80%</span></h3> </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span> <span>65%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>PHP</span> <span>60%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Symfony</span> <span>50%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Python</span> <span>60%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>C++</span> <span>80%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Kotlin</span> <span>50%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Posgresql</span> <span>100%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>ocaml</span> <span>80%</span></h3> </div>
-
-
-
-         
-
-
-        
-      </div>
-
-   </div>
-
-   <div class="edu-exp">
-
-      <h1 class="heading" data-aos="fade-up"> <span>Etude & experiences</span> </h1>
-
-      <div class="row">
-
-         <div class="box-container">
-
-            <h3 class="title" data-aos="fade-right">Etude</h3>
-
-            <div class="box" data-aos="fade-right">
-               <span>( 2021 - 2022 )</span>
-               <h3> Licence 1 Mathématiques informatique</h3>
-               <p>En première année de licence en mathématiques et informatique, 
-                  j'ai appris les bases des mathématiques et de l'informatique, 
-                  y compris les algorithmes, les structures de données et la programmation.
-                  </p>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-cat">Frontend web</div>
+            <div class="skill-name">Interfaces modernes</div>
+            <div class="skill-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">HTML / CSS</span>
             </div>
-            <div class="box" data-aos="fade-right">
-               <span>( 2022 - 2023 )</span>
-               <h3> Licence 2 Mathématiques informatique</h3>
-               <p>En tant qu'étudiant en deuxième année de licence en mathématiques et informatique, je me plonge dans l'univers de la programmation orientée objet en explorant une variété de langages, dont le C++, PHP, JavaScript,Python,etc. Cette formation me permet de développer une solide compréhension de la programmation orientée objet.
-                  </p>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-cat">Frontend mobile</div>
+            <div class="skill-name">Interfaces modernes</div>
+            <div class="skill-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">TamagUi</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Mapbox</span>
+              <span class="tag">Flutter debutant</span>
             </div>
+          </div>
 
-            <div class="box" data-aos="fade-right">
-               <span>( 2023 - 2024 )</span>
-               <h3> Licence 3 informatique</h3>
-               <p>En tant qu'étudiant en troisième année de licence en informatique, j'ai réalisé des avancées significatives dans mes études. J'ai solidifié mes bases en mathématiques tout en approfondissant mes compétences en informatique. Mon domaine d'expertise s'étend désormais à des langages tels que C++, MySQL, PostgreSQL,JavaScript,ocaml,AWK,etc.
-                  </p>
+          <div class="skill-card reveal">
+            <div class="skill-cat">Backend</div>
+            <div class="skill-name">APIs robustes</div>
+            <div class="skill-tags">
+              <span class="tag">SpringBoot</span>
+              <span class="tag">Synfony</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">REST / GraphQL</span>
             </div>
+          </div>
 
-         </div>
-
-         <div class="box-container">
-
-            <h3 class="title" data-aos="fade-left">experience</h3>
-
-            <div class="box" data-aos="fade-left">
-               <span>( 2021 )</span>
-               <h3>Projet Flash Coop</h3>
-               <p>Vivre en accéléré dans la création d'entreprise (Ecologiqie) en
-                  partenariat avec CDP49, BIOCOP</p>
+          <div class="skill-card reveal">
+            <div class="skill-cat">Base de données</div>
+            <div class="skill-name">Données & persistance</div>
+            <div class="skill-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Oracle</span>
             </div>
+          </div>
 
-            <div class="box" data-aos="fade-left">
-               <span>( 2022 )</span>
-               <h3>front-end developer</h3>
-               <p>Création d'un site Web pour une entreprise familiale de location
-                  d'appartement. 
-                  </p>
+          <div class="skill-card reveal">
+            <div class="skill-cat">DevOps</div>
+            <div class="skill-name">Deploy & CI/CD</div>
+            <div class="skill-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Nginx debutant</span>
             </div>
+          </div>
 
-            <div class="box" data-aos="fade-left">
-               <span>( 2022 )</span>
-               <h3>Projet Algorithmique</h3>
-               <p>Utilisation du langage C++ pour l'élaboration du jeu Bataille Naval et
-                  son site Web
-                  </p>
+          <div class="skill-card reveal">
+            <div class="skill-cat">Embarque</div>
+            <div class="skill-name">Autres outils</div>
+            <div class="skill-tags">
+              <span class="tag">C++</span>
+              <span class="tag">C#</span>
             </div>
+          </div>
 
-            <div class="box" data-aos="fade-left">
-               <span>( 2023 )</span>
-               <h3>Projet Algorithmique</h3>
-               <p>Creation d'une calculatrice complet en deux version Java et (JavaScript,HTML5 et CSS)
-                  </p>
+          <div class="skill-card reveal">
+            <div class="skill-cat">Inelligence artificielle</div>
+            <div class="skill-name">Projets IA</div>
+            <div class="skill-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Alpha & Beta</span>
+              <span class="tag">Mini max</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Machine Learning</span>
             </div>
+          </div>
 
-            
-         </div>
+          <div class="skill-card reveal">
+            <div class="skill-cat">Gestion de projet</div>
+            <div class="skill-name">Projets</div>
+            <div class="skill-tags">
+              <span class="tag">Agile</span>
+              <span class="tag">Scrum</span>
+              <span class="tag">Pert</span>
+              <span class="tag">Gantt</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      </div>
+      <!-- ══════════════════════════════
+       PROJETS
+       ══════════════════════════════ -->
+      <section id="projects">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title reveal">Mes projets</h2>
 
-   </div>
+        <!-- Onglets -->
+        <div class="proj-tabs reveal">
+          <button class="proj-tab active" data-tab="pro">
+            Professionnels
+          </button>
+          <button class="proj-tab" data-tab="fac">Académiques</button>
+        </div>
 
-</section>
+        <!-- ── PROJETS PROFESSIONNELS ── -->
+        <div class="proj-panel active" id="tab-pro">
+          <!-- Projet Pro 1 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g1">
+                  <img src="cal1.jpeg" />
 
-<!-- about section ends -->
+                  <div class="slide-placeholder">
+                    Capture 1 — Accueil 1
+                  </div>
+                </div>
+                <div class="slide slide-g2">
+                  <img src="cal2.jpeg" />
 
-<!-- services section starts  -->
+                  <div class="slide-placeholder">
+                   
+                    Capture 1 — Accueil 2
 
-<section class="services" id="services">
+                  </div>
+                </div>
+                <div class="slide slide-g3">
+                  <img src="cal3.jpeg" />
 
-   <h1 class="heading" data-aos="fade-up"> <span>services</span> </h1>
+                  <div class="slide-placeholder">
+                    Capture 1 — Accueil 3
 
-   <div class="box-container">
+                  </div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+              <div class="view">
+                <button class="view-btn">Voir le projet</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num pro">PRO — 01</span>
+                <span class="badge badge-pro">Pro</span>
+                <span class="project-year">2025</span>
+              </div>
+              <div class="project-title">Calculatrice en ligne</div>
+              <div class="project-desc">
+                Une application de calculatrice disponible en IOS et Android,développée pour un client se trouvant au Etats Unis. L'application offre une interface intuitive et des fonctionnalités avancées pour les calculs scientifiques.
+                Disponible sur les stores, elle a été conçue pour être rapide, fiable et facile à utiliser.
+              </div>
+              <div class="project-stack">
+               
+                <span class="tag">React Native</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-code"></i>
-         <h3>development web</h3>
-         <p>création de sites et d'applications Web modernes et performants 
-            en utilisant les dernières technologies du Web.</p>
-      </div>
+          <!-- Projet Pro 2 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g4">
+                  <img src="grille.png" />
 
+                  <div class="slide-placeholder">Capture 1 — Accueil 1</div>
+                </div>
+                <div class="slide slide-g5">
+                  <img src="grille.png" />
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fab fa-bootstrap"></i>
-         <h3>bootstrap</h3>
-         <p>Utilisation du framework Bootstrap pour un design réactif et une expérience 
-            utilisateur cohérente sur tous les appareils.</p>
-      </div>
+                  <div class="slide-placeholder">
+                    Capture 2 — Capture 1 — Accueil 2</div>
+                </div>
+                <div class="slide slide-g6">
+                  <img src="grille.png" />
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fab fa-wordpress"></i>
-         <h3>wordpress</h3>
-         <p>Utilisation du CMS WordPress pour permettre une gestion facile du contenu 
-            et une personnalisation flexible du design.</p>
-      </div>
+                  <div class="slide-placeholder">Capture 1 — Accueil 3</div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+              <div class="view">
+                <button class="view-btn">Voir le projet</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num pro">PRO — 02</span>
+                <span class="badge badge-pro">Pro</span>
+                <span class="project-year">2024</span>
+              </div>
+              <div class="project-title">Application d'étude en france</div>
+              <div class="project-desc">
+                  Une application de gestion des candidatures pour les étudiants souhaitant étudier en France. L'application permet aux utilisateurs de créer un profil, de soumettre leurs candidatures, de suivre l'état de leurs demandes et de recevoir des notifications en temps réel.
+              </div>
+              <div class="project-stack">
+                 <span class="tag">React Native</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT</span>
+              </div>
+            </div>
+          </div>
 
-   </div>
+          <!-- Projet Pro 3 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g2">
+                  <img src="grille.png" />
 
-</section>
+                  <div class="slide-placeholder">
+                    Capture 1 — Accueil 1
+                  </div>
+                </div>
+                <div class="slide slide-g5">
+                  <img src="grille.png" />
 
-<!-- services section ends -->
+                  <div class="slide-placeholder">
+                    Capture 2 — Accueil 2
+                  </div>
+                </div>
+                <div class="slide slide-g3">
+                  <img src="grille.png" />
 
-<!-- portfolio section starts  -->
+                  <div class="slide-placeholder">Capture 3 — Accueil 3</div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+              <div class="view">
+                <button class="view-btn">Voir le projet</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num pro">PRO — 03</span>
+                <span class="badge badge-pro">Pro</span>
+                <span class="project-year">2023</span>
+              </div>
+              <div class="project-title">Dashboard plannings</div>
+              <div class="project-desc">
+                Un tableau de bord de gestion des plannings des employés. L'application permet aux managers de visualiser les horaires de travail, de gérer les absences et de planifier les tâches de manière efficace. Et aux employés de consulter leurs horaires, de demander des congés et de recevoir des notifications sur les changements de planning.
+              </div>
+              <div class="project-stack">
+                <span class="tag">Angular</span>
+                <span class="tag">NodeJs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /tab-pro -->
 
-<section class="portfolio" id="portfolio">
+        <!-- ── PROJETS ACADÉMIQUES ── -->
+        <div class="proj-panel" id="tab-fac">
+          <!-- Projet Fac 1 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g6">
+                  <img src="grille.png" />
+                  <div class="slide-placeholder">Capture 1 — Page </div>
+                </div>
+                <div class="slide slide-g1">
+                  <img src="grille.png" />
 
-   <h1 class="heading" data-aos="fade-up"> <span>portfolio</span> </h1>
+                  <div class="slide-placeholder">Capture 2 — Page</div>
+                </div>
+                <div class="slide slide-g4">
+                  <img src="grille.png" />
 
-   <div class="box-container">
+                  <div class="slide-placeholder">
+                    Capture 3 — Page
+                  </div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num fac">FAC — 01</span>
+                <span class="badge badge-fac">Académique</span>
+                <span class="project-year">2024</span>
+              </div>
+              <div class="project-title">Jeu de grille</div>
+              <div class="project-desc">
+                En licence 3,j'ai développé un jeu de grille en d'informatique
+                en Ocaml. Le projet ma permis de mettre en pratique mes
+                compétences en programmation fonctionnelle et en algorithmique,
+                tout en créant une expérience ludique et interactive.
+              </div>
+              <div class="project-stack">
+                <span class="tag">Ocaml</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="box" data-aos="zoom-in">
-         <img src="devant" alt="">
-         <h3>development front-end</h3>
-         <span>( 2021 - 2022 )</span>
-      </div>
+          <!-- Projet Fac 2 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g3">
+                  <img src="sudoku.png" />
 
-      <div class="box" data-aos="zoom-in">
-         <img src="BN.jpg" alt="">
-         <h3>development jeu bataille navale</h3>
-         <span>( 2021 - 2022 )</span>
-      </div>
+                  <div class="slide-placeholder">
+                    Capture 1 — Page
+                  </div>
+                </div>
+                <div class="slide slide-g6">
+                  <img src="sudoku.png" />
 
-      <div class="box" data-aos="zoom-in">
-         <img src="JM.jpg" alt="">
-         <h3>jeu du morpion</h3>
-         <span>( 2021 - 2022 )</span>
-      </div>
+                  <div class="slide-placeholder">
+                    Capture 2 — Page
+                  </div>
+                </div>
+                <div class="slide slide-g2">
+                  <img src="sudoku.png" />
 
-      <div class="box" data-aos="zoom-in">
-         <img src="CP.jpg" alt="">
-         <h3>chiffrement python</h3>
-         <span>( 2021 - 2022 )</span>
-      </div>
+                  <div class="slide-placeholder">
+                    Capture 3 — Page
+                  </div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num fac">FAC — 02</span>
+                <span class="badge badge-fac">Académique</span>
+                <span class="project-year">2024 et 2026</span>
+              </div>
+              <div class="project-title">Le jeu de Sudoku</div>
+              <div class="project-desc">
+                En licence 3 et master 1, j'ai développé un jeu de Sudoku en
+                Java puis en Python. Ce projet m'a permis d'explorer les
+                concepts d'intelligence artificielle et de traitement du langage
+                naturel (NLP) pour créer une expérience de jeu interactive et
+                engageante.
+              </div>
+              <div class="project-stack">
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                <span class="tag">NLP</span>
+                <span class="tag">IA</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="box" data-aos="zoom-in">
-         <img src="SM.jpg" alt="">
-         <h3>saute mouton</h3>
-         <span>( 2021 - 2022 )</span>
-      </div>
+          <!-- Projet Fac 3 -->
+          <div class="project-card reveal">
+            <div class="slider-wrap" data-slider>
+              <div class="slider-track">
+                <div class="slide slide-g5">
+                  <img src="SM.jpg" />
 
-      <div class="box" data-aos="zoom-in">
-         <img src="la toile" alt="">
-         <h3>web development</h3>
-         <span>( 2022 - 2023 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="calculatrice.jpeg" alt="">
-         <h3>calculatrice en JavaScript</h3>
-         <span>( 2022 - 2023 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="sudoku.png" alt="">
-         <h3>Programmation du jeu sudoku en Java</h3>
-         <span>( 2022 - 2023 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="img-12.png" alt="">
-         <h3>Realisation d'une calcullatrice en Kotlin</h3>
-         <span>( 2022 - 2023 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="grille.png" alt="">
-         <h3>Programmation du jeu des grilles en ocaml</h3>
-         <span>( 2023 - 2024 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="img-10.png" alt="">
-         <h3>Gestion des professeurs sur image SVG en Symfony, Js, Html-css</h3>
-         <span>( 2023 - 2024 )</span>
-      </div>
-      <div class="box" data-aos="zoom-in">
-         <img src="img-11.png" alt="">
-         <h3>Realisation d'un site de vente en ligne Amaty(En cours) Symfony, Js, Html-css</h3>
-         <span>( 2024 )</span>
-      </div>
+                  <div class="slide-placeholder">Capture 1 — Page</div>
+                </div>
+                <div class="slide slide-g3">
+                  <img src="SM.jpg" />
 
-   </div>
+                  <div class="slide-placeholder">
+                    Capture 2 — Page
+                  </div>
+                </div>
+                <div class="slide slide-g1">
+                  <img src="SM.jpg" />
 
-</section>
+                  <div class="slide-placeholder">Capture 3 — Page</div>
+                </div>
+              </div>
+              <button class="slider-btn prev">‹</button>
+              <button class="slider-btn next">›</button>
+              <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-num fac">FAC — 03</span>
+                <span class="badge badge-fac">Académique</span>
+                <span class="project-year">2023</span>
+              </div>
+              <div class="project-title">Saute de Mouton</div>
+              <div class="project-desc">
+                En licence 3,j'ai développé un jeu saute de mouton en C++. Ce
+                projet m'a permis de bien m'amuser en c++ comme c'est l'un de
+                mes langages préférés, tout en créant une expérience ludique et
+                interactive.
+              </div>
+              <div class="project-stack">
+                <span class="tag">C++</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /tab-fac -->
+      </section>
 
-<!-- portfolio section ends -->
+      <!-- ══════════════════════════════
+       À PROPOS
+                <span class="tag">Maps API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /tab-fac -->
+      </section>
 
-<!-- contact section starts  -->
+      <!-- ══════════════════════════════
+       À PROPOS
+       ══════════════════════════════ -->
+      <section id="about">
+        <div class="section-label">À propos</div>
+        <div class="about-grid">
+          <div>
+            <h2 class="section-title reveal">
+              Passionné par<br />le code propre.
+            </h2>
+            <br />
+            <div class="about-text reveal">
+              <p>
+                Je suis <em>CISSE Ousmane N'Faly</em>, développeur Fullstack
+                avec une passion pour la création d'applications web et mobile
+                performantes et bien architecturées.
+              </p>
+              <p>
+                Mon approche : un <em>backend solide</em>, une
+                <em>API bien pensée</em> et un <em>frontend intuitif</em>. Je
+                crois qu'un bon produit naît de la rigueur technique autant que
+                du sens du détail.
+              </p>
+              <p>
+                Toujours en veille, toujours en train d'apprendre — parce que le
+                web n'attend pas.
+              </p>
+            </div>
+          </div>
 
-<section class="contact" id="contact">
+          <div class="about-stats reveal">
+            <div class="stat-box">
+              <span class="stat-number">1+</span>
+              <span class="stat-label">Années d'expérience</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projets livrés</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosité</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-   <h1 class="heading" data-aos="fade-up"> <span>contact</span> </h1>
+      <!-- ══════════════════════════════
+       CONTACT
+       ══════════════════════════════ -->
+      <section id="contact">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title reveal">Travaillons ensemble.</h2>
 
-   <form action="" method="post">
-      <div class="flex">
-         <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required>
-         <input data-aos="fade-left" type="email" name="email" placeholder="enter your email" class="box" required>
-      </div>
-      <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box" required>
-      <textarea data-aos="fade-up" name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
-      <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
-   </form>
+        <a
+          href="mailto:cisseousmane3208@gmail.com"
+          class="contact-email reveal"
+        >
+          cisseousmane3208@gmail.com
+        </a>
 
-   <div class="box-container">
+        <div class="socials reveal">
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Ousmane199"
+            target="_blank"
+            class="social-link"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+            -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+            .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+            -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+            c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+            0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+            0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-phone"></i>
-         <h3>phone</h3>
-         <p>+33 7 45 67 11 19</p>
-      </div>
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/ousmane-n-faly-cisse-a37a87250"
+            target="_blank"
+            class="social-link"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136
+            2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267
+            5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782
+            13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24
+            1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+            LinkedIn
+          </a>
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-envelope"></i>
-         <h3>email</h3>
-         <p>cisseousmane3208@gmail.com</p>
-      </div>
+          <!-- Email -->
+          <a href="mailto:cisseousmane3208@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273
+            H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548
+            l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+              />
+            </svg>
+            Email
+          </a>
+        </div>
+      </section>
+    </main>
 
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-map-marker-alt"></i>
-         <h3>address</h3>
-         <p> Angers / France</p>
-      </div>
+    <!-- ══════════════════════════════
+     FOOTER
+     ══════════════════════════════ -->
+    <footer>
+      <p>© 2026 — CISSE Ousmane N'Faly</p>
+      <p>Fullstack Developer</p>
+    </footer>
 
-   </div>
-
-</section>
-
-<!-- contact section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-<!-- aos js link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script>
-
-   AOS.init({
-      duration:800,
-      delay:300
-   });
-
-</script>
-   
-</body>
+    <!-- Script principal -->
+    <script src="main.js"></script>
+  </body>
 </html>
